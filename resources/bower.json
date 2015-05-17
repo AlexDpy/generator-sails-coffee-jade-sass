@@ -1,0 +1,13 @@
+{
+  "name": "__sails__",
+  "version": "0.0.0",
+  "authors": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
