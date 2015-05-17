@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         },
         shell: {
             sails: {
-                command: 'sails new __sails__'
+                command: 'sails new __sails__ --viewEngine=jade'
             }
         },
         js2coffee: {
