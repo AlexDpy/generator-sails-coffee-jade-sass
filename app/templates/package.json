@@ -22,7 +22,8 @@
     "grunt-contrib-less": "0.11.1",
     "grunt-contrib-coffee": "~0.10.1",
     "coffee-script": "~1.9.2",
-    "jade": "~1.9.2"
+    "jade": "~1.9.2",
+    "grunt-sass": "~1.0.0"
   },
   "scripts": {
     "start": "node app.js",

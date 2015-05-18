@@ -47,6 +47,17 @@ module.exports = function(grunt) {
                     }
                 }
             },
+            tasks_register: {
+                expand: true,
+                cwd: '__sails__/tasks/register',
+                src: '**/*',
+                dest: 'app/templates/tasks/register',
+                options: {
+                    process: function (content, srcpath) {
+                        return content.replace(/less:dev/g, 'sass:dev');
+                    }
+                }
+            },
             app: {
                 expand: true,
                 cwd: '__sails__',
@@ -56,7 +67,8 @@ module.exports = function(grunt) {
                     '!node_modules/*',
                     '!<%= js2coffee.coffee.src %>',
                     '!.editorconfig',
-                    '!<%= copy.gitignore.src %>'
+                    '!<%= copy.gitignore.src %>',
+                    '!tasks/register/*'
                 ],
                 dest: 'app/templates'
             }
@@ -69,6 +81,7 @@ module.exports = function(grunt) {
                 modifier: function (obj) {
                     obj.dependencies['coffee-script'] = '~1.9.2';
                     obj.dependencies['jade'] = '~1.9.2';
+                    obj.dependencies['grunt-sass'] = '~1.0.0';
                     delete obj.dependencies.ejs;
 
                     obj.author = '';
@@ -96,6 +109,7 @@ module.exports = function(grunt) {
         'js2coffee',
         'copy:resources',
         'copy:gitignore',
+        'copy:tasks_register',
         'copy:app',
         'json_massager:package.json'
     ]);

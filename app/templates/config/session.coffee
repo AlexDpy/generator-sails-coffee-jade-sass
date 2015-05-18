@@ -17,7 +17,7 @@ Session secret is automatically generated when your new app is created   *
 Replace at your own risk in production-- you will invalidate the cookies *
 of your users, forcing them to log in again.                             *
 ###
-module.exports.session = secret: '55031ce87557a8182ace65e6528c74dd'
+module.exports.session = secret: '2cbc94eb9ab4bea09d7f6f4d79128183'
 
 ###*
 Set the session cookie expire time The maxAge is set by milliseconds,    *
