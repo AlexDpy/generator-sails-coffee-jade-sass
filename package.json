@@ -24,5 +24,11 @@
     "grunt-json-massager": "^0.1.0",
     "grunt-modify-json": "^0.1.1",
     "grunt-shell": "^1.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexDpy/generator-sails-coffee-jade-sass.git"
+  },
+  "author": "Alexandre Dupuy <alex.dpy@gmail.com>",
+  "license": "MIT"
 }
